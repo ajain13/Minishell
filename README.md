@@ -3,7 +3,6 @@
 ###TEAM MATES INFORMATIONS:
 * NAME 1 : ABHISHEK JAIN
 * NAME 2 : PRADYUMNA KAUSHIK
-__________________________________________________________________________________________________________________________
 
 ##FILES :
 	1. **minish.c** - C source code of the minish shell.
