@@ -100,7 +100,7 @@
 	2. Continuing a suspended process in foreground works fine, but after the process completes
 	   execution it goes into an infinite loop. You will need to hit *<Ctrl-C>* to get back the prompt.
 
-##REFERENCES:
+##REFERENCES
 	* http://stackoverflow.com/questions/19814906/which-child-process-send-sigchld
 	* http://stackoverflow.com/questions/2595503/determine-pid-of-terminated-process
 	* http://stackoverflow.com/questions/12587621/signal-handler-sa-sigaction-arguments
