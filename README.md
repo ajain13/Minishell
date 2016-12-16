@@ -6,22 +6,18 @@
 
 ##FILES :
 	1. **minish.c** - C source code of the minish shell.
-	2. **Makefile** - Makefile to 'make' the project (compile the minish shell) source
-	   	      code and generate the executable.
+	2. **Makefile** - Makefile to 'make' the project (compile the minish shell) source code and generate the executable.
 	3. **README.md** - README file which includes details of the AUTHORS, instructions to run
-		    the project and also includes bug logs, referenes etc.
-
+		    the project and also includes bug logs, references etc.
 
 ##SOFTWARE REQUIREMENTS:
 	1. **GCC version 5.2.0** and upwards.
 
 	NOTE: Any lower version may result in **underfined behaviour** including compilation errors and memory corruptions.
 
-
 ##INSTRUCTIONS TO RUN THE SHELL:
-
 	1. First we need to 'make' the project in-order to run the shell.
-	   Do this by running the command as shown bellow :
+	   Do this by running the command as shown bellow:
 		 ```
 		 make
 		 ```
@@ -41,9 +37,7 @@
 	   This should have removed the object file in the project directory.
 
 ##FALLBACK EXECUTION INSTRUCTIONS IF make FAILS:
-
 	*NOTE : SKIP THIS SECTION IF make was successful i.e. if make did not throw errors.*
-
 	1. Say for some unexpected reason 'make' fails. Then compile the shell C source
 	   code by using gcc as shown below:
 		```
@@ -65,7 +59,6 @@
 	    the user to remove the object files.
 
 ##BUGS IN THE PROGRAM:
-
 	1. **regcomp()** in *regex.h* : the **regcomp()** module is buggy as it "sometimes" results in
 	   malloc() error.
 	   Please note that IF THIS ERROR OCCURS WHILE TESTING, the shell source code does
@@ -109,7 +102,6 @@
 	   execution it goes into an infinite loop. You will need to hit *<Ctrl-C>* to get back the prompt.
 
 ##REFERENCES:
-
 	* http://stackoverflow.com/questions/19814906/which-child-process-send-sigchld
 	* http://stackoverflow.com/questions/2595503/determine-pid-of-terminated-process
 	* http://stackoverflow.com/questions/12587621/signal-handler-sa-sigaction-arguments
