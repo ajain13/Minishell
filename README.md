@@ -7,8 +7,7 @@
 ##FILES :
 	1. **minish.c** - C source code of the minish shell.
 	2. **Makefile** - Makefile to 'make' the project (compile the minish shell) source code and generate the executable.
-	3. **README.md** - README file which includes details of the AUTHORS, instructions to run
-		    the project and also includes bug logs, references etc.
+	3. **README.md** - README file which includes details of the AUTHORS, instructions to run the project and also includes bug logs, references etc.
 
 ##SOFTWARE REQUIREMENTS:
 	1. **GCC version 5.2.0** and upwards.
@@ -163,7 +162,7 @@
 	* ftp://ftp.gnu.org/old-gnu/Manuals/grep-2.4/html_chapter/grep_5.html
 	* http://regexr.com
 	* http://www.seeingwithc.org/topic7html.html
-  * http://stackoverflow.com/questions/1631450/c-regular-expression-howto
+	* http://stackoverflow.com/questions/1631450/c-regular-expression-howto  
 	* http://stackoverflow.com/questions/18477153/c-compiler-warning-unknown-escape-sequence-using-regex-for-c-program
 	* http://stackoverflow.com/questions/1395177/regex-to-exclude-a-specific-string-constant
 	* https://blog.udemy.com/c-string-to-int/
