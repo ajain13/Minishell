@@ -58,13 +58,13 @@
 	    the user to remove the object files.
 
 ##BUGS IN THE PROGRAM:
-	1. **regcomp()** in *regex.h* : the **regcomp()** module is buggy as it "sometimes" results in
-	   malloc() error.
-	   Please note that IF THIS ERROR OCCURS WHILE TESTING, the shell source code does
-	   not contain any bugs. Its the library issue, as we believe the library is deprecated.
-	   Reason to use it was to detect the foreground and background commands. The approach of tokenization
-	   and detection may result in segmentation faults.
-	   For example: the following will result in a segmentation fault:
+	1. **regcomp()** in *regex.h*: The **regcomp()** module is buggy as it "sometimes" results in malloc() error.  
+		 Please note that IF THIS ERROR OCCURS WHILE TESTING, the shell source code does  
+	   not contain any bugs. Its the library issue, as we believe the library is deprecated.  
+	   Reason to use it was to detect the foreground and background commands. The approach of tokenization  
+		 and detection may result in segmentation faults.
+	   For example: the following will result in a segmentation fault:  
+
 		```
 		minish>gcc test_sleep.c -o bin/test_sleep.o
 
@@ -72,16 +72,16 @@
 
 		minish>ls
 		segmentation fault
-		```
+		```  
 
-		The following link give more information on this :
+		The following link give more information on this:  
 
 		https://lists.ubuntu.com/archives/foundations-bugs/2012-May/089662.html
 
+	  Any command after the above gcc command throws a segmentation fault.  
+	  We ran the code with gdb and realized that the **regcomp()** is throwing a segmentation fault.  
+	  But the following does not lead to segmentation fault:  
 
-	  Any command after the above gcc command throws a segmentation fault.
-	  We ran the code with gdb and realized that the **regcomp()** is throwing a segmentation fault.
-	  But the following does not lead to segmentation fault :
 		```
 		minish>gcc test_sleep.o -o test_sleep.o
 
@@ -90,14 +90,13 @@
 		minish>ls
 
 		<works>
-		```
+		```  
 
-		Other variants like **gcc <filename.c>** or **gcc <flags> <filename.c>** work. Only the
-		**gcc <filename.c> -<flags> -o <folder>/<object_file.o>** throws a segmentation fault.
-
+		Other variants like **gcc <filename.c>** or **gcc <flags> <filename.c>** work. Only the  
+		**gcc <filename.c> -<flags> -o <folder>/<object_file.o>** throws a segmentation fault.  
 		Please NOTE that sometimes **gcc <filename.c> -o <executable>** gives a memory corruption error.
 
-	2. Continuing a suspended process in foreground works fine, but after the process completes
+	2. Continuing a suspended process in foreground works fine, but after the process completes  
 	   execution it goes into an infinite loop. You will need to hit *<Ctrl-C>* to get back the prompt.
 
 ##REFERENCES
