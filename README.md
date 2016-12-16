@@ -11,13 +11,13 @@ ________________________________________________________________________________
 	   	      code and generate the executable.
 	3. **README.md** - README file which includes details of the AUTHORS, instructions to run
 		    the project and also includes bug logs, referenes etc.
-__________________________________________________________________________________________________________________________
+
 
 ##SOFTWARE REQUIREMENTS:
 	1. **GCC version 5.2.0** and upwards.
 
 	NOTE: Any lower version may result in **underfined behaviour** including compilation errors and memory corruptions.
-__________________________________________________________________________________________________________________________
+
 
 ##INSTRUCTIONS TO RUN THE SHELL:
 
@@ -40,7 +40,6 @@ ________________________________________________________________________________
 		make clean
 		```
 	   This should have removed the object file in the project directory.
-__________________________________________________________________________________________________________________________
 
 ##FALLBACK EXECUTION INSTRUCTIONS IF make FAILS:
 
@@ -65,7 +64,6 @@ ________________________________________________________________________________
 		```
 	3. *make clean* may not work in this case so may require explicit command by
 	    the user to remove the object files.
-__________________________________________________________________________________________________________________________
 
 ##BUGS IN THE PROGRAM:
 
@@ -110,7 +108,6 @@ ________________________________________________________________________________
 
 	2. Continuing a suspended process in foreground works fine, but after the process completes
 	   execution it goes into an infinite loop. You will need to hit *<Ctrl-C>* to get back the prompt.
-__________________________________________________________________________________________________________________________
 
 ##REFERENCES:
 
@@ -190,4 +187,3 @@ ________________________________________________________________________________
 	* http://www.cs.cornell.edu/Courses/cs414/2004su/homework/shell/shell.html
 	* http://brennan.io/2015/01/16/write-a-shell-in-c/
 	* http://stackoverflow.com/questions/1500004/how-can-i-implement-my-own-basic-unix-shell-in-c
-__________________________________________________________________________________________________________________________
